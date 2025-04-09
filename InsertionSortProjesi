@@ -44,6 +44,53 @@ csharp
 .
 [2, 6, 16, 18, 22, 27]
 
-Big-O Gösterimi:
-Insertion Sort'un Big-O gösterimi, dizinin uzunluğuna bağlı olarak değişir:
+Big-O Gösterimi
+Insertion Sort algoritmasının Big-O gösterimi:
+
+Best case (en iyi durum): Dizi zaten sıralıysa, her eleman yalnızca bir kez kontrol edilir, bu durumda O(n) olur.
+
+Worst case (en kötü durum): Dizi tamamen ters sıralanmışsa, her eleman için her diğer elemanla karşılaştırma yapılır. Bu durumda O(n²) olur.
+
+Average case (ortalama durum): Çoğu durumda, O(n²) kabul edilir.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı hangi durumda olur?
+Verilen 18, sıralandıktan sonra dizinin ortasında yer alır. Bu, Average Case'in bir örneğidir, çünkü aradığınız sayı sıralandıktan sonra dizinin ortasında bir pozisyona yerleşmiştir. Average Case durumunda, sayı ortada olabilir.
+
+Selection Sort: İlk 4 Adım
+Verilen dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+
+Selection Sort algoritması, her adımda en küçük elemanı bulur ve onu sırasıyla dizinin başına yerleştirir.
+
+Adım 1: Dizinin tamamında en küçük eleman 2'dir, ve 2 dizinin ilk elemanı ile (7) yer değiştirir.
+
+csharp
+.
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+Adım 2: Kalan dizide en küçük eleman 3'tür ve zaten dizinin ikinci elemanı olduğu için bir değişiklik yapılmaz.
+
+csharp
+.
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+Adım 3: Kalan dizide en küçük eleman 4'tür ve bu, 5 ile yer değiştirir.
+
+csharp
+.
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+Adım 4: Kalan dizide en küçük eleman 5'tir ve bu, 8 ile yer değiştirir.
+
+csharp
+.
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
+Sonuç:
+İlk 4 adımda dizi şu şekilde sıralandı:
+
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+[2, 3, 5, 8, 7, 9, 4, 15, 6]
+
+[2, 3, 4, 8, 7, 9, 5, 15, 6]
+
+[2, 3, 4, 5, 7, 9, 8, 15, 6]
+
+Teşekkürler
 

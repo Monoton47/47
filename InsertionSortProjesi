@@ -6,34 +6,42 @@ Insertion Sort, sıralama işlemini yaparken diziyi sağdan sola doğru tarar ve
 Başlangıçta dizi:
 
 csharp
+.
 [22, 27, 16, 2, 18, 6]
 Adım 1: İlk eleman 22 zaten yerinde kabul edilir çünkü yalnızca bir eleman var.
 
 css
+.
 [22, 27, 16, 2, 18, 6] (değişiklik yok)
 Adım 2: 27 elemanı, 22'den büyük olduğu için yerinde kalır.
 
 css
+.
 [22, 27, 16, 2, 18, 6] (değişiklik yok)
 Adım 3: 16 elemanı, 27'den küçük olduğu için 27'nin önüne, 22'den küçük olduğu için 22'nin önüne gelir. Yani, 16 en başa yerleşir.
 
 csharp
+.
 [16, 22, 27, 2, 18, 6]
 Adım 4: 2 elemanı, önce 27'den sonra 22'den, sonra 16'dan küçük olduğu için, 16'nın önüne, 22'nin önüne ve 27'nin önüne yerleşir.
 
 csharp
+.
 [2, 16, 22, 27, 18, 6]
 Adım 5: 18 elemanı, 27'den küçük ama 22'den büyük olduğu için 22'nin önüne yerleşir.
 
 csharp
+.
 [2, 16, 18, 22, 27, 6]
 Adım 6: 6 elemanı, 27, 22, 18, 16, ve 2'den küçük olduğu için en başa yerleşir.
 
 csharp
+.
 [2, 6, 16, 18, 22, 27]
 
 Sonuç olarak sıralı dizi:
 csharp
+.
 [2, 6, 16, 18, 22, 27]
 
 Big-O Gösterimi:

@@ -1,0 +1,85 @@
+Verilen dizi: [16, 21, 11, 8, 12, 22]
+
+Merge Sort algoritması, divide and conquer (böl ve fethet) yaklaşımını kullanarak sıralama yapar. Temel adımlar şunlardır:
+
+Dizi ikiye bölünür.
+
+Alt diziler sıralanır.
+
+Sıralı alt diziler birleştirilir.
+
+Şimdi, [16, 21, 11, 8, 12, 22] dizisini adım adım Merge Sort ile sıralayalım.
+
+1. Adım: Diziyi ikiye bölme
+Verilen dizi: [16, 21, 11, 8, 12, 22]
+
+Bölme işlemi:
+
+Sol yarı: [16, 21, 11]
+
+Sağ yarı: [8, 12, 22]
+
+2. Adım: Sol yarıyı sıralama
+Sol dizi: [16, 21, 11]
+
+Sol dizi tekrar ikiye bölünür:
+
+[16] ve [21, 11]
+
+[21, 11] dizisini sıralayalım:
+
+[21] ve [11] dizilerini sıralarız: [11, 21]
+
+Birleştirme:
+
+[16] ve [11, 21] dizilerini birleştiririz:
+
+[11, 16, 21]
+
+Sonuç: Sol yarı sıralı hale gelir: [11, 16, 21]
+
+3. Adım: Sağ yarıyı sıralama
+Sağ dizi: [8, 12, 22]
+
+Sağ dizi tekrar ikiye bölünür:
+
+[8] ve [12, 22]
+
+[12, 22] dizisini sıralayalım:
+
+[12] ve [22] dizileri zaten sıralıdır: [12, 22]
+
+Birleştirme:
+
+[8] ve [12, 22] dizilerini birleştiririz:
+
+[8, 12, 22]
+
+Sonuç: Sağ yarı sıralı hale gelir: [8, 12, 22]
+
+4. Adım: Son adımda iki sıralı diziyi birleştirme
+Sol dizi: [11, 16, 21]
+
+Sağ dizi: [8, 12, 22]
+
+Bu dizileri birleştiriyoruz:
+
+8, 11, 12, 16, 21, 22 şeklinde sıralanır.
+
+Sonuçta sıralı dizi:
+
+csharp
+
+[8, 11, 12, 16, 21, 22]
+Big-O Gösterimi
+Merge Sort algoritmasının Big-O gösterimi:
+
+Best case (en iyi durum): Her iki alt diziyi her adımda sıralamak için aynı işlem yapılır. Yani, en iyi durumda da O(n log n) olur.
+
+Worst case (en kötü durum): Tüm elemanları karşılaştırarak sıralamak gerektiği için O(n log n) olur.
+
+Average case (ortalama durum): Yine sıralama her zaman benzer şekilde yapılacağı için O(n log n) olur.
+
+Merge Sort algoritmasının Big-O gösterimi:
+
+O(n log n) her durumda.
